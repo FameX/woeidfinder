@@ -1,0 +1,23 @@
+{
+  "name": "famex/woeidfinder",
+  "authors": [
+    {
+      "name": "Dominik Schwind",
+      "homepage": "http://dominikschwind.com",
+      "role": "Developer"
+    }
+  ],
+  "version": "0.1.0",
+  "require": {
+    "php": ">=5.4.0",
+    "kriswallsmith/buzz": ">= 0.11"
+  },
+  "require-dev": {
+    "illuminate/filesystem": "4.2.*",
+    "illuminate/cache": "4.2.*",
+    "phpunit/phpunit": "4.6.*"
+  },
+  "autoload": {
+    "psr-0": {"Famex\\WoeidFinder": "src/"}
+  }
+}
