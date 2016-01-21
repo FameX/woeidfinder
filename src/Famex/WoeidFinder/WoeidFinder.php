@@ -114,6 +114,7 @@ class WoeidFinder
 			}
 			$woeid = new WoEID();
 			$woeid->woeid = $yqlPlace->woeid;
+			if (isset($yqlPlace->placeTypeName->code)) $woeid->code = $yqlPlace->placeTypeName->code;
 			if (isset($yqlPlace->boundingBox)) $woeid->boundingBox = $yqlPlace->boundingBox;
 			if (isset($yqlPlace->centroid)) $woeid->centroid = $yqlPlace->centroid;
 			if (isset($yqlPlace->placeTypeName)) $woeid->type = $yqlPlace->placeTypeName->content;
